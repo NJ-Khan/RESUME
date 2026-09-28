@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Projects & Technical Work | Naveedullah Jabarkhail</title>
+
+<meta name="description"
+ content="Technical projects and professional work in networking, IT infrastructure, cybersecurity, systems administration, and network support."> <meta name="keywords"
+ content="Naveedullah Jabarkhail, Network Engineer, IT, Networking, Cisco, Sophos, Ubiquiti, UniFi, Active Directory">
+
+  <!-- Favicons -->
+
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =========================================================
+       PAGE-SPECIFIC PORTFOLIO DESIGN
+       This CSS affects ONLY portfolio.html
+  ========================================================== -->
+
+  <style>
+
+    /* ---------------------------------------------------------
+       General
+    --------------------------------------------------------- */
+
+    .portfolio-modern {
+      padding: 80px 0 100px;
+    }
+
+    .portfolio-modern .container {
+      max-width: 1180px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Page Header
+    --------------------------------------------------------- */
+
+    .portfolio-intro {
+      max-width: 760px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .portfolio-eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6c757d;
+    }
+
+    .portfolio-intro h2 {
+      margin: 0 0 18px;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #222;
+    }
+
+    .portfolio-intro p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #6b7280;
+    }
+
+
+    /* ---------------------------------------------------------
+       Category Filters
+    --------------------------------------------------------- */
+
+    .project-filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 45px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .project-filters li {
+      padding: 9px 18px;
+      border: 1px solid #e4e7eb;
+      border-radius: 30px;
+      background: #fff;
+      color: #6b7280;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .project-filters li:hover,
+    .project-filters li.filter-active {
+      background: #222;
+      border-color: #222;
+      color: #fff;
+    }
+
+
+    /* ---------------------------------------------------------
+       Project Grid
+    --------------------------------------------------------- */
+
+    .project-grid {
+      margin-top: 10px;
+    }
+
+    .project-item {
+      margin-bottom: 28px;
+    }
+
+    .project-card {
+      height: 100%;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid #e8eaed;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #222;
+      transition: width 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: #d9dde2;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-card:hover::before {
+      width: 100%;
+    }
+
+
+    /* ---------------------------------------------------------
+       Project Number
+    --------------------------------------------------------- */
+
+    .project-number {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #9ca3af;
+      margin-bottom: 25px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Project Icon
+    --------------------------------------------------------- */
+
+    .project-icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      background: #f5f6f7;
+      color: #222;
+      font-size: 23px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover .project-icon {
+      background: #222;
+      color: #fff;
+    }
+
+
+    /* ---------------------------------------------------------
+       Project Content
+    --------------------------------------------------------- */
+
+    .project-card h3 {
+      margin: 0 0 12px;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .project-card p {
+      margin: 0 0 22px;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+
+    /* ---------------------------------------------------------
+       Technology Tags
+    --------------------------------------------------------- */
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .project-tags span {
+      padding: 5px 10px;
+      border: 1px solid #e6e8eb;
+      color: #6b7280;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Technical Focus Section
+    --------------------------------------------------------- */
+
+    .technical-focus {
+      margin-top: 85px;
+      padding-top: 65px;
+      border-top: 1px solid #e8eaed;
+    }
+
+    .technical-focus-header {
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .technical-focus-header span {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6c757d;
+    }
+
+    .technical-focus-header h3 {
+      margin: 0 0 12px;
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .technical-focus-header p {
+      margin: 0;
+      color: #6b7280;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Focus Items
+    --------------------------------------------------------- */
+
+    .focus-item {
+      display: flex;
+      gap: 18px;
+      padding: 22px 0;
+      border-top: 1px solid #e8eaed;
+    }
+
+    .focus-item:last-child {
+      border-bottom: 1px solid #e8eaed;
+    }
+
+    .focus-icon {
+      flex: 0 0 40px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f6f7;
+      border-radius: 8px;
+      color: #222;
+    }
+
+    .focus-item h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .focus-item p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #737b84;
+    }
+
+
+    /* ---------------------------------------------------------
+       CTA
+    --------------------------------------------------------- */
+
+    .portfolio-cta {
+      margin-top: 80px;
+      padding: 45px;
+      background: #f7f7f7;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .portfolio-cta h3 {
+      margin: 0 0 8px;
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .portfolio-cta p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .portfolio-cta .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+
+    .portfolio-cta .btn-contact:hover {
+      background: #000;
+      transform: translateY(-2px);
+    }
+
+
+    /* ---------------------------------------------------------
+       Responsive
+    --------------------------------------------------------- */
+
+    @media (max-width: 991px) {
+
+      .portfolio-modern {
+        padding: 60px 0 80px;
+      }
+
+      .portfolio-intro h2 {
+        font-size: 36px;
+      }
+
+      .portfolio-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+
+    @media (max-width: 575px) {
+
+      .portfolio-modern {
+        padding: 50px 0 65px;
+      }
+
+      .portfolio-intro {
+        margin-bottom: 40px;
+      }
+
+      .portfolio-intro h2 {
+        font-size: 30px;
+      }
+
+      .portfolio-intro p {
+        font-size: 14px;
+      }
+
+      .project-card {
+        padding: 25px;
+      }
+
+      .portfolio-cta {
+        padding: 30px 25px;
+      }
+
+      .portfolio-cta h3 {
+        font-size: 21px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body class="portfolio-page">
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+
+```
+<div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+  <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+    <h1 class="sitename">Naveedullah Jabarkhail</h1>
+  </a>
+
+
+  <nav id="navmenu" class="navmenu">
+
+    <ul>
+
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="about.html">About</a>
+      </li>
+
+      <li>
+        <a href="resume.html">Resume</a>
+      </li>
+
+      <li>
+        <a href="services.html">Services</a>
+      </li>
+
+      <li>
+        <a href="portfolio.html" class="active">Projects</a>
+      </li>
+
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+
+    </ul>
+
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+  </nav>
+
+
+  <div class="header-social-links">
+
+    <a href="#" aria-label="Twitter">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a href="#" aria-label="Facebook">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="#" aria-label="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+      <i class="bi bi-linkedin"></i>
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </header>
+
+  <!-- =========================================================
+       MAIN
+  ========================================================== -->
+
+  <main class="main">
+
+```
+<!-- =======================================================
+     PROJECTS SECTION
+======================================================== -->
+
+<section class="portfolio-modern section">
+
+  <div class="container">
+
+
+    <!-- Intro -->
+
+    <div class="portfolio-intro" data-aos="fade-up">
+
+      <span class="portfolio-eyebrow">
+        PROFESSIONAL WORK
+      </span>
+
+      <h2>Projects & Technical Work</h2>
+
+      <p>
+        A selection of my practical experience across network infrastructure,
+        security, systems administration, wireless connectivity, and IT support.
+      </p>
+
+    </div>
+
+
+    <!-- Filters -->
+
+    <ul class="project-filters" data-aos="fade-up" data-aos-delay="100">
+
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-network">Networking</li>
+      <li data-filter=".filter-security">Security</li>
+      <li data-filter=".filter-systems">Systems</li>
+      <li data-filter=".filter-support">IT Support</li>
+
+    </ul>
+
+
+    <!-- Project Grid -->
+
+    <div class="row project-grid isotope-container"
+         data-aos="fade-up"
+         data-aos-delay="150">
+
+
+      <!-- Project 01 -->
+
+      <div class="col-lg-4 col-md-6 project-item isotope-item filter-network">
+
+        <div class="project-card">
+
+          <div class="project-number">
+            01 / NETWORKING
+          </div>
+
+          <div class="project-icon">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+
+          <h3>Network Infrastructure</h3>
+
+          <p>
+            Practical experience supporting LAN and WAN environments,
+            switching, VLANs, IP addressing, network connectivity,
+            structured cabling, and network documentation.
+          </p>
+
+          <div class="project-tags">
+            <span>Cisco</span>
+            <span>VLAN</span>
+            <span>LAN/WAN</span>
+            <span>TCP/IP</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Project 02 -->
+
+      <div class="col-lg-4 col-md-6 project-item isotope-item filter-security">
+
+        <div class="project-card">
+
+          <div class="project-number">
+            02 / SECURITY
+          </div>
+
+          <div class="project-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+
+          <h3>Firewall & Network Security</h3>
+
+          <p>
+            Experience supporting Sophos firewall environments, including
+            routing, NAT, access control, secure connectivity, VPNs,
+            and practical network security troubleshooting.
+          </p>
+
+          <div class="project-tags">
+            <span>Sophos</span>
+            <span>NAT</span>
+            <span>ACL</span>
+            <span>IPSec VPN</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Project 03 -->
+
+      <div class="col-lg-4 col-md-6 project-item isotope-item filter-network">
+
+        <div class="project-card">
+
+          <div class="project-number">
+            03 / WIRELESS
+          </div>
+
+          <div class="project-icon">
+            <i class="bi bi-wifi"></i>
+          </div>
+
+          <h3>Wireless & Point-to-Point</h3>
+
+          <p>
+            Deployment and troubleshooting of wireless connectivity using
+            UniFi access points and Ubiquiti PowerBeam point-to-point
+            equipment for reliable network communication.
+          </p>
+
+          <div class="project-tags">
+            <span>UniFi</span>
+            <span>PowerBeam</span>
+            <span>Wi-Fi</span>
+            <span>P2P</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Project 04 -->
+
+      <div class="col-lg-4 col-md-6 project-item isotope-item filter-systems">
+
+        <div class="project-card">
+
+          <div class="project-number">
+            04 / SYSTEMS
+          </div>
+
+          <div class="project-icon">
+            <i class="bi bi-server"></i>
+          </div>
+
+          <h3>Windows Server & Active Directory</h3>
+
+          <p>
+            Supporting Windows-based environments with Active Directory,
+            user and access management, Group Policy, DHCP, endpoint
+            administration, and routine server operations.
+          </p>
+
+          <div class="project-tags">
+            <span>Windows Server</span>
+            <span>Active Directory</span>
+            <span>GPO</span>
+            <span>DHCP</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Project 05 -->
+
+      <div class="col-lg-4 col-md-6 project-item isotope-item filter-support">
+
+        <div class="project-card">
+
+          <div class="project-number">
+            05 / IT SUPPORT
+          </div>
+
+          <div class="project-icon">
+            <i class="bi bi-headset"></i>
+          </div>
+
+          <h3>IT Support & Troubleshooting</h3>
+
+          <p>
+            Hands-on technical support covering desktops, operating
+            systems, applications, printers, official email, connectivity,
+            peripherals, and day-to-day user issues.
+          </p>
+
+          <div class="project-tags">
+            <span>Help Desk</span>
+            <span>Hardware</span>
+            <span>Windows</span>
+            <span>Troubleshooting</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Project 06 -->
+
+      <div class="col-lg-4 col-md-6 project-item isotope-item filter-network">
+
+        <div class="project-card">
+
+          <div class="project-number">
+            06 / INFRASTRUCTURE
+          </div>
+
+          <div class="project-icon">
+            <i class="bi bi-hdd-network"></i>
+          </div>
+
+          <h3>Physical Network Infrastructure</h3>
+
+          <p>
+            Practical work with network hardware and physical infrastructure,
+            including Cat6 cabling, RJ45 termination, patch panels, racks,
+            switches, access points, and IP phones.
+          </p>
+
+          <div class="project-tags">
+            <span>Cat6</span>
+            <span>RJ45</span>
+            <span>Patch Panels</span>
+            <span>IP Phones</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         TECHNICAL FOCUS
+    ====================================================== -->
+
+    <div class="technical-focus">
+
+
+      <div class="technical-focus-header" data-aos="fade-up">
+
+        <span>WHAT I WORK WITH</span>
+
+        <h3>Technical Focus</h3>
+
+        <p>
+          My work is centered around maintaining reliable, secure, and
+          well-organized IT environments.
+        </p>
+
+      </div>
+
+
+      <div class="row">
+
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="focus-item">
+
+            <div class="focus-icon">
+              <i class="bi bi-router"></i>
+            </div>
+
+            <div>
+
+              <h4>Network Operations</h4>
+
+              <p>
+                Switching, routing, VLANs, IP addressing, connectivity
+                troubleshooting, and network infrastructure support.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="focus-item">
+
+            <div class="focus-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+
+            <div>
+
+              <h4>Network Security</h4>
+
+              <p>
+                Firewall administration, VPN connectivity, NAT, ACLs,
+                segmentation, and security-focused troubleshooting.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="focus-item">
+
+            <div class="focus-icon">
+              <i class="bi bi-pc-display"></i>
+            </div>
+
+            <div>
+
+              <h4>Systems & Endpoints</h4>
+
+              <p>
+                Windows systems, Active Directory, user management,
+                endpoint support, software, hardware, and access control.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+
+          <div class="focus-item">
+
+            <div class="focus-icon">
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+
+            <div>
+
+              <h4>Documentation & Support</h4>
+
+              <p>
+                Maintaining technical information, troubleshooting records,
+                device details, network information, and operational support.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <div class="portfolio-cta" data-aos="fade-up">
+
+      <div>
+
+        <h3>Have an IT or networking requirement?</h3>
+
+        <p>
+          Let's discuss the environment, requirements, and technical challenges.
+        </p>
+
+      </div>
+
+      <a href="contact.html" class="btn-contact">
+        Contact Me
+        <i class="bi bi-arrow-right"></i>
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer id="footer" class="footer light-background">
+
+```
+<div class="container">
+
+  <div class="copyright text-center">
+
+    <p>
+      © <span>Copyright</span>
+      <strong class="px-1 sitename">Naveedullah Jabarkhail</strong>
+      <span>All Rights Reserved<br></span>
+    </p>
+
+  </div>
+
+
+  <div class="social-links d-flex justify-content-center">
+
+    <a href="#">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-linkedin"></i>
+    </a>
+
+  </div>
+
+
+  <div class="credits">
+
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you've purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+
+    Designed by
+    <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+  </div>
+
+</div>
+```
+
+  </footer>
+
+  <!-- Scroll Top -->
+
+<a href="#"
+  id="scroll-top"
+  class="scroll-top d-flex align-items-center justify-content-center">
+
+```
+<i class="bi bi-arrow-up-short"></i>
+```
+
+  </a>
+
+  <!-- Preloader -->
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

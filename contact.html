@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contact | Naveedullah Jabarkhail</title>
+
+<meta name="description"
+ content="Contact Naveedullah Jabarkhail for networking, IT infrastructure, systems administration, and technical support opportunities.">
+
+<meta name="keywords"
+ content="Naveedullah Jabarkhail, Network Engineer, IT Support, Networking, Contact">
+
+  <!-- Favicons -->
+
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =========================================================
+       PAGE-SPECIFIC CONTACT DESIGN
+       This CSS affects ONLY contact.html
+  ========================================================== -->
+
+  <style>
+
+    /* ---------------------------------------------------------
+       General
+    --------------------------------------------------------- */
+
+    .contact-modern {
+      padding: 80px 0 100px;
+    }
+
+    .contact-modern .container {
+      max-width: 1180px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Intro
+    --------------------------------------------------------- */
+
+    .contact-intro {
+      max-width: 760px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+
+    .contact-eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6c757d;
+    }
+
+    .contact-intro h2 {
+      margin: 0 0 18px;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #222;
+    }
+
+    .contact-intro p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+
+    /* ---------------------------------------------------------
+       Contact Information
+    --------------------------------------------------------- */
+
+    .contact-info {
+      height: 100%;
+      padding-right: 35px;
+    }
+
+    .contact-info-title {
+      margin-bottom: 28px;
+    }
+
+    .contact-info-title h3 {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .contact-info-title p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+
+    /* ---------------------------------------------------------
+       Contact Items
+    --------------------------------------------------------- */
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 17px;
+      padding: 20px 0;
+      border-top: 1px solid #e8eaed;
+    }
+
+    .contact-item:last-child {
+      border-bottom: 1px solid #e8eaed;
+    }
+
+    .contact-item-icon {
+      flex: 0 0 44px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f6f7;
+      border-radius: 9px;
+      color: #222;
+      font-size: 19px;
+    }
+
+    .contact-item-content h4 {
+      margin: 0 0 5px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .contact-item-content a,
+    .contact-item-content p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .contact-item-content a {
+      transition: color 0.2s ease;
+    }
+
+    .contact-item-content a:hover {
+      color: #222;
+    }
+
+
+    /* ---------------------------------------------------------
+       WhatsApp Card
+    --------------------------------------------------------- */
+
+    .whatsapp-card {
+      margin-top: 30px;
+      padding: 25px;
+      background: #f7f7f7;
+      border: 1px solid #e8eaed;
+    }
+
+    .whatsapp-card-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .whatsapp-icon {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #222;
+      color: #fff;
+      font-size: 21px;
+    }
+
+    .whatsapp-card h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .whatsapp-card p {
+      margin: 0 0 18px;
+      color: #6b7280;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .whatsapp-direct {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 17px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .whatsapp-direct:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+
+    /* ---------------------------------------------------------
+       Contact Form
+    --------------------------------------------------------- */
+
+    .contact-form-wrapper {
+      padding: 38px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+    }
+
+    .contact-form-header {
+      margin-bottom: 30px;
+    }
+
+    .contact-form-header span {
+      display: block;
+      margin-bottom: 9px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6c757d;
+    }
+
+    .contact-form-header h3 {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 25px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .contact-form-header p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+
+    /* ---------------------------------------------------------
+       Form Fields
+    --------------------------------------------------------- */
+
+    .contact-form .form-label {
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .contact-form .form-control {
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid #e1e4e8;
+      border-radius: 5px;
+      background: #fff;
+      color: #333;
+      font-size: 13px;
+      box-shadow: none;
+      transition: all 0.2s ease;
+    }
+
+    .contact-form textarea.form-control {
+      min-height: 145px;
+      resize: vertical;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #999;
+      box-shadow: none;
+    }
+
+    .contact-form .form-control::placeholder {
+      color: #a0a5ab;
+    }
+
+
+    /* ---------------------------------------------------------
+       Send Button
+    --------------------------------------------------------- */
+
+    .whatsapp-submit {
+      width: 100%;
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 0;
+      background: #222;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .whatsapp-submit:hover {
+      background: #000;
+      transform: translateY(-2px);
+    }
+
+    .whatsapp-submit i {
+      font-size: 17px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Form Status
+    --------------------------------------------------------- */
+
+    .contact-status {
+      display: none;
+      margin-top: 15px;
+      padding: 12px 15px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .contact-status.success {
+      display: block;
+      background: #f3f7f4;
+      border: 1px solid #dbe8df;
+      color: #3d5947;
+    }
+
+    .contact-status.error {
+      display: block;
+      background: #faf4f4;
+      border: 1px solid #eadcdc;
+      color: #704444;
+    }
+
+
+    /* ---------------------------------------------------------
+       Bottom Note
+    --------------------------------------------------------- */
+
+    .contact-note {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #e8eaed;
+      text-align: center;
+    }
+
+    .contact-note p {
+      margin: 0;
+      color: #7a8087;
+      font-size: 12px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Responsive
+    --------------------------------------------------------- */
+
+    @media (max-width: 991px) {
+
+      .contact-modern {
+        padding: 60px 0 80px;
+      }
+
+      .contact-intro h2 {
+        font-size: 36px;
+      }
+
+      .contact-info {
+        padding-right: 0;
+        margin-bottom: 25px;
+      }
+
+    }
+
+
+    @media (max-width: 575px) {
+
+      .contact-modern {
+        padding: 50px 0 65px;
+      }
+
+      .contact-intro {
+        margin-bottom: 40px;
+      }
+
+      .contact-intro h2 {
+        font-size: 30px;
+      }
+
+      .contact-intro p {
+        font-size: 14px;
+      }
+
+      .contact-form-wrapper {
+        padding: 25px 20px;
+      }
+
+      .contact-item {
+        padding: 17px 0;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body class="contact-page">
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+
+```
+<div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+  <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+    <h1 class="sitename">Naveedullah Jabarkhail</h1>
+
+  </a>
+
+
+  <nav id="navmenu" class="navmenu">
+
+    <ul>
+
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="about.html">About</a>
+      </li>
+
+      <li>
+        <a href="resume.html">Resume</a>
+      </li>
+
+      <li>
+        <a href="services.html">Services</a>
+      </li>
+
+      <li>
+        <a href="portfolio.html">Projects</a>
+      </li>
+
+      <li>
+        <a href="contact.html" class="active">Contact</a>
+      </li>
+
+    </ul>
+
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+  </nav>
+
+
+  <div class="header-social-links">
+
+    <a href="#" aria-label="Twitter">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a href="#" aria-label="Facebook">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="#" aria-label="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+      <i class="bi bi-linkedin"></i>
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </header>
+
+  <!-- =========================================================
+       MAIN
+  ========================================================== -->
+
+  <main class="main">
+
+```
+<section class="contact-modern section">
+
+  <div class="container">
+
+
+    <!-- Intro -->
+
+    <div class="contact-intro" data-aos="fade-up">
+
+      <span class="contact-eyebrow">
+        GET IN TOUCH
+      </span>
+
+      <h2>Let's Connect</h2>
+
+      <p>
+        Whether you have a networking requirement, IT opportunity,
+        technical question, or simply want to discuss a project,
+        feel free to get in touch.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-5">
+
+
+      <!-- =====================================================
+           CONTACT INFORMATION
+      ====================================================== -->
+
+      <div class="col-lg-5"
+           data-aos="fade-up"
+           data-aos-delay="100">
+
+        <div class="contact-info">
+
+
+          <div class="contact-info-title">
+
+            <h3>Contact Information</h3>
+
+            <p>
+              The quickest way to reach me is through WhatsApp.
+              You can also contact me by email or connect with me
+              through my professional networks.
+            </p>
+
+          </div>
+
+
+          <!-- Email -->
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <div class="contact-item-content">
+
+              <h4>Email</h4>
+
+              <a href="mailto:YOUR_EMAIL@example.com">
+                YOUR_EMAIL@example.com
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- WhatsApp -->
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+
+            <div class="contact-item-content">
+
+              <h4>WhatsApp</h4>
+
+              <a href="#"
+                 id="direct-whatsapp-link">
+                Send me a message
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- LinkedIn -->
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">
+              <i class="bi bi-linkedin"></i>
+            </div>
+
+            <div class="contact-item-content">
+
+              <h4>LinkedIn</h4>
+
+              <a href="#"
+                 target="_blank"
+                 rel="noopener">
+                Connect with me professionally
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- Location -->
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+
+            <div class="contact-item-content">
+
+              <h4>Location</h4>
+
+              <p>
+                Kabul, Afghanistan
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Direct WhatsApp -->
+
+          <div class="whatsapp-card">
+
+            <div class="whatsapp-card-top">
+
+              <div class="whatsapp-icon">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+
+              <h4>Prefer WhatsApp?</h4>
+
+            </div>
+
+            <p>
+              Send me a direct message on WhatsApp. Your message
+              can be sent without using a separate contact form.
+            </p>
+
+            <a href="#"
+               id="direct-whatsapp-button"
+               class="whatsapp-direct">
+
+              <i class="bi bi-whatsapp"></i>
+              Message Me on WhatsApp
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           CONTACT FORM
+      ====================================================== -->
+
+      <div class="col-lg-7"
+           data-aos="fade-up"
+           data-aos-delay="200">
+
+        <div class="contact-form-wrapper">
+
+
+          <div class="contact-form-header">
+
+            <span>MESSAGE ME</span>
+
+            <h3>Send a Message</h3>
+
+            <p>
+              Fill out the form below. When you click send,
+              WhatsApp will open with your message prepared.
+            </p>
+
+          </div>
+
+
+          <form id="whatsapp-contact-form"
+                class="contact-form">
+
+
+            <div class="row gy-4">
+
+
+              <!-- Name -->
+
+              <div class="col-md-6">
+
+                <label for="name-field"
+                       class="form-label">
+
+                  Your Name
+
+                </label>
+
+                <input
+                  type="text"
+                  name="name"
+                  id="name-field"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                  required>
+
+              </div>
+
+
+              <!-- Email -->
+
+              <div class="col-md-6">
+
+                <label for="email-field"
+                       class="form-label">
+
+                  Your Email
+
+                </label>
+
+                <input
+                  type="email"
+                  name="email"
+                  id="email-field"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required>
+
+              </div>
+
+
+              <!-- Subject -->
+
+              <div class="col-md-12">
+
+                <label for="subject-field"
+                       class="form-label">
+
+                  Subject
+
+                </label>
+
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject-field"
+                  class="form-control"
+                  placeholder="What would you like to discuss?"
+                  required>
+
+              </div>
+
+
+              <!-- Message -->
+
+              <div class="col-md-12">
+
+                <label for="message-field"
+                       class="form-label">
+
+                  Message
+
+                </label>
+
+                <textarea
+                  name="message"
+                  id="message-field"
+                  class="form-control"
+                  rows="6"
+                  placeholder="Write your message here..."
+                  required></textarea>
+
+              </div>
+
+
+              <!-- Submit -->
+
+              <div class="col-md-12">
+
+                <button
+                  type="submit"
+                  class="whatsapp-submit">
+
+                  <i class="bi bi-whatsapp"></i>
+
+                  Send via WhatsApp
+
+                </button>
+
+
+                <div
+                  id="contact-status"
+                  class="contact-status"
+                  role="status"
+                  aria-live="polite">
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- Bottom Note -->
+
+    <div class="contact-note"
+         data-aos="fade-up">
+
+      <p>
+        I usually respond as soon as possible during my available hours.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer id="footer" class="footer light-background">
+
+
+<div class="container">
+
+  <div class="copyright text-center">
+
+    <p>
+
+      © <span>Copyright</span>
+
+      <strong class="px-1 sitename">
+        Naveedullah Jabarkhail
+      </strong>
+
+      <span>
+        All Rights Reserved<br>
+      </span>
+
+    </p>
+
+  </div>
+
+
+  <div class="social-links d-flex justify-content-center">
+
+    <a href="#">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-linkedin"></i>
+    </a>
+
+  </div>
+
+
+  <div class="credits">
+
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you've purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+
+    Designed by
+    <a href="https://bootstrapmade.com/">
+      BootstrapMade
+    </a>
+
+  </div>
+
+</div>
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+
+<a href="#"
+  id="scroll-top"
+  class="scroll-top d-flex align-items-center justify-content-center">
+
+```
+<i class="bi bi-arrow-up-short"></i>
+```
+
+  </a>
+
+  <!-- Preloader -->
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

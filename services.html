@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Services - Naveedullah Jabarkhail</title>
+
+  <meta
+    name="description"
+    content="IT, networking, systems administration and network security services by Naveedullah Jabarkhail.">
+
+  <meta
+    name="keywords"
+    content="Network Engineer, IT Support, Network Security, Sophos, Cisco, Systems Administration, Networking">
+
+  <!-- Favicons -->
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+
+  <!-- =========================================================
+       SERVICES PAGE ONLY CSS
+       ========================================================= -->
+
+  <style>
+
+    /* ---------------------------------------------------------
+       General
+    --------------------------------------------------------- */
+
+    .services-modern {
+      padding-bottom: 80px;
+    }
+
+    .services-modern .container {
+      max-width: 1180px;
+    }
+
+    .services-modern .section-heading {
+      margin-bottom: 55px;
+    }
+
+    .services-modern .section-eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 12px;
+    }
+
+    .services-modern .section-heading h2 {
+      font-size: 38px;
+      font-weight: 700;
+      margin: 0 0 14px;
+      color: var(--heading-color);
+    }
+
+    .services-modern .section-heading p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+
+    /* ---------------------------------------------------------
+       Hero
+    --------------------------------------------------------- */
+
+    .services-hero {
+      padding: 90px 0 70px;
+    }
+
+    .services-hero-content {
+      max-width: 850px;
+    }
+
+    .services-hero .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+
+    .services-hero h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 20px;
+    }
+
+    .services-hero h1 span {
+      color: var(--accent-color);
+    }
+
+    .services-hero p {
+      max-width: 750px;
+      font-size: 17px;
+      line-height: 1.9;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin-bottom: 30px;
+    }
+
+    .services-hero-line {
+      width: 70px;
+      height: 3px;
+      background: var(--accent-color);
+    }
+
+
+    /* ---------------------------------------------------------
+       Services Grid
+    --------------------------------------------------------- */
+
+    .services-list {
+      padding: 20px 0 70px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: color-mix(in srgb, var(--default-color), transparent 88%);
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+    }
+
+    .service-item-modern {
+      position: relative;
+      background: var(--background-color);
+      padding: 35px 30px;
+      min-height: 285px;
+      border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      transition: all 0.3s ease;
+    }
+
+    .service-item-modern:hover {
+      background: color-mix(in srgb, var(--accent-color), transparent 96%);
+    }
+
+    .service-number {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: color-mix(in srgb, var(--default-color), transparent 65%);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      background: color-mix(in srgb, var(--accent-color), transparent 90%);
+      color: var(--accent-color);
+      border-radius: 4px;
+      font-size: 23px;
+      transition: all 0.3s ease;
+    }
+
+    .service-item-modern:hover .service-icon {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    .service-item-modern h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 12px;
+    }
+
+    .service-item-modern p {
+      font-size: 13px;
+      line-height: 1.8;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      margin: 0;
+    }
+
+    .service-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+    }
+
+    .service-list li {
+      position: relative;
+      padding-left: 19px;
+      margin-bottom: 7px;
+      font-size: 12px;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+    }
+
+    .service-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-color);
+    }
+
+
+    /* ---------------------------------------------------------
+       Service Details
+    --------------------------------------------------------- */
+
+    .service-details {
+      padding: 60px 0 80px;
+    }
+
+    .service-detail-row {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 45px;
+      padding: 32px 0;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+    }
+
+    .service-detail-row:last-child {
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+    }
+
+    .detail-number {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-color);
+      letter-spacing: 1px;
+    }
+
+    .detail-title h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin: 0;
+    }
+
+    .detail-content p {
+      font-size: 14px;
+      line-height: 1.85;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      margin: 0 0 15px;
+    }
+
+    .detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .detail-tags span {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+      border-radius: 3px;
+      font-size: 11px;
+      color: var(--heading-color);
+    }
+
+
+    /* ---------------------------------------------------------
+       Technology Section
+    --------------------------------------------------------- */
+
+    .technology-section {
+      padding: 30px 0 80px;
+    }
+
+    .technology-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 30px 0;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+    }
+
+    .technology-title {
+      min-width: 220px;
+    }
+
+    .technology-title span {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-color);
+      margin-bottom: 5px;
+    }
+
+    .technology-title h3 {
+      margin: 0;
+      font-size: 21px;
+      color: var(--heading-color);
+    }
+
+    .technology-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 9px;
+    }
+
+    .technology-list span {
+      padding: 7px 12px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 84%);
+      border-radius: 3px;
+      background: var(--background-color);
+      font-size: 12px;
+      color: var(--heading-color);
+    }
+
+
+    /* ---------------------------------------------------------
+       Approach Section
+    --------------------------------------------------------- */
+
+    .approach-section {
+      padding: 20px 0 70px;
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .approach-item {
+      padding: 25px 0;
+      border-top: 2px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+    }
+
+    .approach-number {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-color);
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .approach-item h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 10px;
+    }
+
+    .approach-item p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.8;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+
+
+    /* ---------------------------------------------------------
+       CTA
+    --------------------------------------------------------- */
+
+    .services-cta {
+      padding: 30px 0 20px;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 40px 0;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+    }
+
+    .cta-inner h3 {
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin: 0 0 7px;
+    }
+
+    .cta-inner p {
+      margin: 0;
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 21px;
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .cta-button:hover {
+      color: var(--contrast-color);
+      opacity: 0.88;
+      transform: translateY(-2px);
+    }
+
+
+    /* ---------------------------------------------------------
+       Responsive
+    --------------------------------------------------------- */
+
+    @media (max-width: 991px) {
+
+      .services-hero {
+        padding: 65px 0 50px;
+      }
+
+      .services-hero h1 {
+        font-size: 40px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-detail-row {
+        grid-template-columns: 170px 1fr;
+        gap: 25px;
+      }
+
+      .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+      }
+
+      .technology-wrapper {
+        display: block;
+      }
+
+      .technology-list {
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
+
+    }
+
+
+    @media (max-width: 767px) {
+
+      .services-modern .section-heading h2 {
+        font-size: 31px;
+      }
+
+      .services-hero h1 {
+        font-size: 34px;
+      }
+
+      .services-hero p {
+        font-size: 15px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-item-modern {
+        min-height: auto;
+      }
+
+      .service-detail-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-inner {
+        display: block;
+      }
+
+      .cta-button {
+        margin-top: 20px;
+      }
+
+    }
+
+
+    @media (max-width: 575px) {
+
+      .services-hero {
+        padding: 45px 0 40px;
+      }
+
+      .services-hero h1 {
+        font-size: 30px;
+      }
+
+      .service-item-modern {
+        padding: 28px 22px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body class="services-page">
+
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Naveedullah Jabarkhail</h1>
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="resume.html">Resume</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="active">Services</a>
+          </li>
+
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      </nav>
+
+
+      <div class="header-social-links">
+
+        <a href="#" class="twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a href="#" class="facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#" class="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#" class="linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       MAIN
+       ========================================================= -->
+
+  <main class="main services-modern">
+
+
+    <!-- =======================================================
+         HERO
+         ======================================================= -->
+
+    <section class="services-hero">
+
+      <div class="container">
+
+        <div class="services-hero-content" data-aos="fade-up">
+
+          <span class="eyebrow">
+            Professional Services
+          </span>
+
+          <h1>
+            Technology that keeps your
+            <span>infrastructure connected.</span>
+          </h1>
+
+          <p>
+            I provide practical IT and networking support focused on
+            reliable infrastructure, secure connectivity, system
+            administration and efficient technical troubleshooting.
+          </p>
+
+          <div class="services-hero-line"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SERVICES
+         ======================================================= -->
+
+    <section class="services-list">
+
+      <div class="container">
+
+        <div class="section-heading text-center" data-aos="fade-up">
+
+          <span class="section-eyebrow">
+            What I Can Help With
+          </span>
+
+          <h2>IT &amp; Network Services</h2>
+
+          <p>
+            Services built around the areas I have worked with in
+            enterprise IT, networking, infrastructure and technical support.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid" data-aos="fade-up" data-aos-delay="100">
+
+
+          <!-- Service 01 -->
+
+          <div class="service-item-modern">
+
+            <span class="service-number">01</span>
+
+            <div class="service-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+
+            <h3>Network Infrastructure</h3>
+
+            <p>
+              Design, configuration and troubleshooting of network
+              infrastructure and connectivity environments.
+            </p>
+
+            <ul class="service-list">
+              <li>LAN / WAN</li>
+              <li>VLAN configuration</li>
+              <li>Cisco switching</li>
+              <li>Network troubleshooting</li>
+            </ul>
+
+          </div>
+
+
+          <!-- Service 02 -->
+
+          <div class="service-item-modern">
+
+            <span class="service-number">02</span>
+
+            <div class="service-icon">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+
+            <h3>Network Security</h3>
+
+            <p>
+              Network security and firewall administration focused on
+              controlled access and secure connectivity.
+            </p>
+
+            <ul class="service-list">
+              <li>Sophos firewall</li>
+              <li>NAT and ACLs</li>
+              <li>IPSec VPN</li>
+              <li>SSL VPN</li>
+            </ul>
+
+          </div>
+
+
+          <!-- Service 03 -->
+
+          <div class="service-item-modern">
+
+            <span class="service-number">03</span>
+
+            <div class="service-icon">
+              <i class="bi bi-pc-display"></i>
+            </div>
+
+            <h3>Systems Administration</h3>
+
+            <p>
+              Support and administration of Windows-based systems and
+              organizational IT environments.
+            </p>
+
+            <ul class="service-list">
+              <li>Windows Server</li>
+              <li>Active Directory</li>
+              <li>User and access management</li>
+              <li>System troubleshooting</li>
+            </ul>
+
+          </div>
+
+
+          <!-- Service 04 -->
+
+          <div class="service-item-modern">
+
+            <span class="service-number">04</span>
+
+            <div class="service-icon">
+              <i class="bi bi-headset"></i>
+            </div>
+
+            <h3>IT Support</h3>
+
+            <p>
+              Practical technical support for users, computers,
+              peripherals, operating systems and connectivity problems.
+            </p>
+
+            <ul class="service-list">
+              <li>Hardware troubleshooting</li>
+              <li>Software support</li>
+              <li>Endpoint troubleshooting</li>
+              <li>User assistance</li>
+            </ul>
+
+          </div>
+
+
+          <!-- Service 05 -->
+
+          <div class="service-item-modern">
+
+            <span class="service-number">05</span>
+
+            <div class="service-icon">
+              <i class="bi bi-wifi"></i>
+            </div>
+
+            <h3>Wireless &amp; Connectivity</h3>
+
+            <p>
+              Wireless and point-to-point connectivity support for
+              reliable communication between network locations.
+            </p>
+
+            <ul class="service-list">
+              <li>UniFi access points</li>
+              <li>Ubiquiti PowerBeam</li>
+              <li>Wireless troubleshooting</li>
+              <li>Connectivity optimization</li>
+            </ul>
+
+          </div>
+
+
+          <!-- Service 06 -->
+
+          <div class="service-item-modern">
+
+            <span class="service-number">06</span>
+
+            <div class="service-icon">
+              <i class="bi bi-clipboard-data"></i>
+            </div>
+
+            <h3>Network Documentation</h3>
+
+            <p>
+              Clear documentation and organization of network
+              infrastructure to simplify administration and troubleshooting.
+            </p>
+
+            <ul class="service-list">
+              <li>IP address records</li>
+              <li>Network diagrams</li>
+              <li>Device inventories</li>
+              <li>Configuration documentation</li>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SERVICE DETAILS
+         ======================================================= -->
+
+    <section class="service-details">
+
+      <div class="container">
+
+        <div class="section-heading text-center" data-aos="fade-up">
+
+          <span class="section-eyebrow">
+            Technical Scope
+          </span>
+
+          <h2>What I Bring to a Project</h2>
+
+          <p>
+            My approach is centered around understanding the existing
+            environment first, then improving reliability, security and
+            maintainability.
+          </p>
+
+        </div>
+
+
+        <!-- Detail 01 -->
+
+        <div class="service-detail-row" data-aos="fade-up">
+
+          <div class="detail-title">
+
+            <div class="detail-number">
+              01 — NETWORK
+            </div>
+
+            <h3>Infrastructure</h3>
+
+          </div>
+
+          <div class="detail-content">
+
+            <p>
+              I can work with existing LAN/WAN environments, switches,
+              access points and network devices to troubleshoot connectivity
+              issues and maintain reliable network operations.
+            </p>
+
+            <div class="detail-tags">
+              <span>Cisco</span>
+              <span>Switching</span>
+              <span>VLAN</span>
+              <span>LAN/WAN</span>
+              <span>TCP/IP</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Detail 02 -->
+
+        <div class="service-detail-row" data-aos="fade-up">
+
+          <div class="detail-title">
+
+            <div class="detail-number">
+              02 — SECURITY
+            </div>
+
+            <h3>Protection</h3>
+
+          </div>
+
+          <div class="detail-content">
+
+            <p>
+              Network security work includes firewall configuration,
+              VPN connectivity, NAT, access control and maintaining
+              secure communication between users and network resources.
+            </p>
+
+            <div class="detail-tags">
+              <span>Sophos</span>
+              <span>Firewall</span>
+              <span>IPSec</span>
+              <span>SSL VPN</span>
+              <span>ACL</span>
+              <span>NAT</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Detail 03 -->
+
+        <div class="service-detail-row" data-aos="fade-up">
+
+          <div class="detail-title">
+
+            <div class="detail-number">
+              03 — SYSTEMS
+            </div>
+
+            <h3>Administration</h3>
+
+          </div>
+
+          <div class="detail-content">
+
+            <p>
+              I support Windows-based environments including Active
+              Directory, user access, endpoint troubleshooting and
+              day-to-day system administration.
+            </p>
+
+            <div class="detail-tags">
+              <span>Windows Server</span>
+              <span>Active Directory</span>
+              <span>GPO</span>
+              <span>User Management</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TECHNOLOGIES
+         ======================================================= -->
+
+    <section class="technology-section">
+
+      <div class="container">
+
+        <div class="technology-wrapper" data-aos="fade-up">
+
+          <div class="technology-title">
+
+            <span>Tools &amp; Technologies</span>
+
+            <h3>Technical Environment</h3>
+
+          </div>
+
+
+          <div class="technology-list">
+
+            <span>Cisco IOS</span>
+            <span>Cisco 3850</span>
+            <span>Sophos</span>
+            <span>UniFi</span>
+            <span>U7 Pro</span>
+            <span>Ubiquiti PowerBeam</span>
+            <span>DHCP</span>
+            <span>Active Directory</span>
+            <span>Windows Server</span>
+            <span>IPSec VPN</span>
+            <span>SSL VPN</span>
+            <span>TCP/IP</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         WORK APPROACH
+         ======================================================= -->
+
+    <section class="approach-section">
+
+      <div class="container">
+
+        <div class="section-heading text-center" data-aos="fade-up">
+
+          <span class="section-eyebrow">
+            My Approach
+          </span>
+
+          <h2>How I Handle Technical Problems</h2>
+
+          <p>
+            A structured approach helps identify the root cause and
+            deliver solutions that are easier to maintain.
+          </p>
+
+        </div>
+
+
+        <div class="approach-grid" data-aos="fade-up" data-aos-delay="100">
+
+
+          <div class="approach-item">
+
+            <div class="approach-number">
+              01
+            </div>
+
+            <h3>Understand</h3>
+
+            <p>
+              Understand the environment, requirements and symptoms
+              before changing the configuration.
+            </p>
+
+          </div>
+
+
+          <div class="approach-item">
+
+            <div class="approach-number">
+              02
+            </div>
+
+            <h3>Diagnose</h3>
+
+            <p>
+              Use structured troubleshooting to isolate the root cause
+              instead of treating only the visible symptom.
+            </p>
+
+          </div>
+
+
+          <div class="approach-item">
+
+            <div class="approach-number">
+              03
+            </div>
+
+            <h3>Implement</h3>
+
+            <p>
+              Apply a practical solution while considering security,
+              reliability and the existing infrastructure.
+            </p>
+
+          </div>
+
+
+          <div class="approach-item">
+
+            <div class="approach-number">
+              04
+            </div>
+
+            <h3>Document</h3>
+
+            <p>
+              Keep configurations, network information and important
+              changes documented for future troubleshooting.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CTA
+         ======================================================= -->
+
+    <section class="services-cta">
+
+      <div class="container">
+
+        <div class="cta-inner" data-aos="fade-up">
+
+          <div>
+
+            <h3>Have an IT or networking requirement?</h3>
+
+            <p>
+              Let's discuss the technical environment and the problem
+              you need to solve.
+            </p>
+
+          </div>
+
+          <a href="contact.html" class="cta-button">
+
+            Contact Me
+
+            <i class="bi bi-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+
+      <div class="copyright text-center">
+
+        <p>
+          ©
+          <span>Copyright</span>
+
+          <strong class="px-1 sitename">
+            Naveedullah Jabarkhail
+          </strong>
+
+          <span>All Rights Reserved</span>
+        </p>
+
+      </div>
+
+
+      <div class="social-links d-flex justify-content-center">
+
+        <a href="#">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+
+
+      <div class="credits">
+
+        Designed by
+        <a href="https://bootstrapmade.com/">
+          BootstrapMade
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+
+  <a
+    href="#"
+    id="scroll-top"
+    class="scroll-top d-flex align-items-center justify-content-center">
+
+    <i class="bi bi-arrow-up-short"></i>
+
+  </a>
+
+
+  <!-- Preloader -->
+
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+  <!-- Main JS File -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
